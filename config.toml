@@ -36,7 +36,7 @@ enableEmoji = true
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
-  
+
 [taxonomies]
     category = "blog"
     tag      = "tags"
@@ -58,6 +58,7 @@ enableEmoji = true
     [languages.en.params.logo]
       logoText = "Professor Law's Basement"
       logoHomeLink = "/"
+      logoCursorColor    = "#006cd1"
 
   [languages.fr]
     title = "Professor Law's Basement"
@@ -76,6 +77,7 @@ enableEmoji = true
     [languages.fr.params.logo]
       logoText = "Professor Law's Basement"
       logoHomeLink = "/"
+      logoCursorColor    = "#006cd1"
 
   # And you can even create generic menu
 
