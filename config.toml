@@ -1,0 +1,75 @@
+baseurl      = "https://professorlaw.github.io"
+title        = "Dev-music blog"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
+enableEmoji = true
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Dev & Music"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+  
+  # Theme Toggle (Light/Dark)
+  enableThemeToggle = true
+  
+  # Lang?
+  enableGlobalLanguageMenu = true
+  # Metadata mostly used in document's head
+  description = "My blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+  customJS= ["https://storage.ko-fi.com/cdn/scripts/overlay-widget.js", "/js/kofi.js"]
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Professor Law's Basement"
+    subtitle = "Dev & Music blog"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "Professor Law's Basement"
+      logoHomeLink = "/"
+
+  [languages.fr]
+    title = "Professor Law's Basement"
+    subtitle = "Dev & Music Blog"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Lire les prochains articles"
+
+    [languages.fr.params.logo]
+      logoText = "Professor Law's Basement"
+      logoHomeLink = "/"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/ProfessorLaw"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/cyrilcanonico"
+
