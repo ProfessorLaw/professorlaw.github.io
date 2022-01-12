@@ -25,12 +25,18 @@ enableEmoji = true
   
   # Lang?
   enableGlobalLanguageMenu = true
+  
   # Metadata mostly used in document's head
-  description = "My blog"
+  description = "Dev & Music blog"
   keywords = "homepage, blog"
   images = [""]
+  mainSections = ["posts"]
 
   customJS= ["https://storage.ko-fi.com/cdn/scripts/overlay-widget.js", "/js/kofi.js"]
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+  
 [taxonomies]
     category = "blog"
     tag      = "tags"
@@ -43,6 +49,11 @@ enableEmoji = true
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
+    
+    # Content related
+    contentDir = 'content/en'
+    languageName = 'English'
+    weight = 10
 
     [languages.en.params.logo]
       logoText = "Professor Law's Basement"
@@ -55,11 +66,24 @@ enableEmoji = true
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Lire les prochains articles"
 
+    # Content related
+    contentDir = 'content/fr'
+    languageName = 'Français'
+    weight = 20
+
+    about = "A propos"
+
     [languages.fr.params.logo]
       logoText = "Professor Law's Basement"
       logoHomeLink = "/"
 
   # And you can even create generic menu
+
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
